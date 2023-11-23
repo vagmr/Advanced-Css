@@ -1,0 +1,26 @@
+.primary-title {
+    color: $color-white;
+    text-transform: uppercase;
+
+    &-main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 5.5rem;
+        animation: moveInleft 1.5s ease-out;
+        /*
+        animation-delay: 2s;//动画延迟时间
+        animation-iteration-count: 3;//动画迭代次数
+         */
+    }
+
+    &-sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.4rem;
+        animation: moveInright 1.5s ease-out;
+        margin-bottom: 5rem;
+    }
+
+}
