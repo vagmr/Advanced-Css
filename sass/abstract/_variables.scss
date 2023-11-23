@@ -1,7 +1,14 @@
 /* 存放项目中所有的变量 */
+//COLORS
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 $color-gray-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+//GRID
+$grid-max-width: 120rem;
+$grid-gutter-vertical: 8rem;
+//水平间距
+$grid-gutter-horizontal: 6rem;

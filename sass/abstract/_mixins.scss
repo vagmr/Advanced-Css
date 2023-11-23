@@ -1,0 +1,9 @@
+@mixin clearfix {
+
+    // 解决浮动导致的高度塌陷问题
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
