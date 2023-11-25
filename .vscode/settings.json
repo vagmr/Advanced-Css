@@ -1,0 +1,4 @@
+{
+    "scss.format.enable": true,
+    "scssFormatter.singleQuote": true
+}

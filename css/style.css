@@ -21,8 +21,28 @@ Dark green: #28b485
 }
 
 html {
-  /* 设置根字体大小 ,默认大小为16px，此处为10px*/
+  /* 设置根字体大小 ,默认大小为16px，此处为10px,即1rem=10px*/
   font-size: 62.5%;
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
 }
 
 body {

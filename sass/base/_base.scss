@@ -8,8 +8,25 @@
 }
 
 html {
-    /* 设置根字体大小 ,默认大小为16px，此处为10px*/
+    /* 设置根字体大小 ,默认大小为16px，此处为10px,即1rem=10px*/
     font-size: 62.5%;
+
+    @include respond(m18) {
+        font-size: 75%;
+    }
+
+    @include respond(m12) {
+        font-size: 56.25%;
+    }
+
+    @include respond(m9) {
+        font-size: 50%;
+    }
+
+    @include respond(m6) {
+        font-size: 40%;
+    }
+
 }
 
 body {
