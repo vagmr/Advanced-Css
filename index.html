@@ -15,6 +15,31 @@
 </head>
 
 <body>
+    <!-- 页面导航 -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation--checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation--button">
+            <span class="navigation-icon">&nbsp;</span>
+
+        </label>
+        <div class="navigation--bg">&nbsp;</div>
+        <div class="navigation--nav">
+            <ul class="navigation--list">
+                <li class="navigation--item"><a href="#section-about" class="navigation--link"><span>01</span>About
+                        Natours</a></li>
+                <li class="navigation--item"><a href="#section-features" class="navigation--link"><span>02</span>Your
+                        Benefits</a></li>
+                <li class="navigation--item"><a href="#section-tours" class="navigation--link"><span>03</span>Popular
+                        Tours</a></li>
+                <li class="navigation--item"><a href="#section-stories"
+                        class="navigation--link"><span>04</span>Stories</a>
+                </li>
+                <li class="navigation--item"><a href="#section-book" class="navigation--link"><span>05</span>Book
+                        Now!</a></li>
+            </ul>
+        </div>
+    </div>
+
     <header class="head">
         <div class="head__logo-box">
             <img src="./img/logo-white.png" alt="logo" class="head__logo">
@@ -28,43 +53,10 @@
         </div>
 
     </header>
-    <!--
-    <section class="grid-test">
-        <div class="row">
-            <div class="col-1-of-2">
-                col 1 of 2
-            </div>
-            <div class="col-1-of-2">
-                col 1 of 2
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-            <div class="col-2-of-4">
-                col 2 of 4
-            </div>
-        </div>
-    </section>
-    -->
+
     <main>
         <!-- 关于区 -->
-        <section class="section-about">
+        <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-8">
                 <h2 class="heading-second">
                     Exciting tours for adventurous people
@@ -101,7 +93,7 @@
             </div>
         </section>
         <!-- 特色区 -->
-        <section class="section-features">
+        <section class="section-features" id="section-features">
 
             <div class="row">
                 <div class="col-1-of-4">
@@ -147,7 +139,7 @@
             </div>
         </section>
         <!-- 旅游区 -->
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-8">
                 <h2 class="heading-second">
                     Most Popular Tours
@@ -182,7 +174,7 @@
                                     <p class="card--price-only">only</p>
                                     <p class="card--price-value">$297</p>
                                 </div>
-                                <a href="javascript:;" class="btn btn-white btn-animate">Book Now!</a>
+                                <a href="#popup" class="btn btn-white btn-animate">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +206,7 @@
                                     <p class="card--price-only">only</p>
                                     <p class="card--price-value">$497</p>
                                 </div>
-                                <a href="javascript:;" class="btn btn-white btn-animate">Book Now!</a>
+                                <a href="#popup" class="btn btn-white btn-animate">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -246,7 +238,7 @@
                                     <p class="card--price-only">only</p>
                                     <p class="card--price-value">$897</p>
                                 </div>
-                                <a href="javascript:;" class="btn btn-white btn-animate">Book Now!</a>
+                                <a href="#popup" class="btn btn-white btn-animate">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +249,7 @@
             </div>
         </section>
         <!-- 故事区 -->
-        <section class="section-stories">
+        <section class="section-stories" id="section-stories">
             <div class="bg-video">
                 <video class="bg-video--content" autoplay muted loop>
                     <source
@@ -320,7 +312,7 @@
             </div>
         </section>
         <!-- 预定区 -->
-        <section class="section-book">
+        <section class="section-book" id="section-book">
             <div class="row">
                 <div class="book">
                     <div class="book--form">
@@ -393,7 +385,7 @@
             <div class="col-1-of-2">
                 <p class="footer--copyright">
                     Built by <a href="javascript:;" class="footer--link">vagmr</a>,This is
-                    <a href="javascript:;" class="footer--link">Advanced css and sass</a>
+                    <a href="https://www.sass.hk/" class="footer--link">Advanced css and sass</a>
                     for learning purposes only.Don't use this project for commercial purposes.
                     Thanks for visiting!I want to do more projects and share with you.
                 </p>
@@ -404,7 +396,71 @@
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup--content">
+            <div class="popup--left">
+                <img src="img/nat-8.jpg" alt="photo" class="popup--img">
+                <img src="img/nat-9.jpg" alt="photo" class="popup--img">
+            </div>
+            <div class="popup--right">
+                <a href="#section-tours" class="popup--close">&times;</a>
+                <h2 class="heading-second u-margin-bottom-4">
+                    Start booking now
+                </h2>
+                <h3 class="heading-third u-margin-bottom-1">
+                    Important &ndash; Please read these terms before booking
+                </h3>
+                <p class="popup--paragraph">
+                    Every person’s origin is their destination, where they came from is where they should return.
+                    True generosity towards the future is to give everything to the present.
+                    It’s strange to sing about dreams when one can’t even express emotions like joy, anger, sorrow, and
+                    happiness.
+                    Your life is like a book, every day is a new story, you can make it exciting.
+                    The secret to success is to find something you love and become better at it through the process.
+                    Always stay humble and continue learning to make progress, so that you can stand undefeated in this
+                    highly competitive
+                    society.
+                    What is most important in life is not what you get, but what kind of person you become.
+                </p>
+                <a href="javascript:;" class="btn btn-green">Book</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 
 </html>
+<!--
+    <section class="grid-test">
+        <div class="row">
+            <div class="col-1-of-2">
+                col 1 of 2
+            </div>
+            <div class="col-1-of-2">
+                col 1 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                col 1 of 3
+            </div>
+            <div class="col-1-of-3">
+                col 1 of 3
+            </div>
+            <div class="col-1-of-3">
+                col 1 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col 1 of 4
+            </div>
+            <div class="col-1-of-4">
+                col 1 of 4
+            </div>
+            <div class="col-2-of-4">
+                col 2 of 4
+            </div>
+        </div>
+    </section>
+    -->
