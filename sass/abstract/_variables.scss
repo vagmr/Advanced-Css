@@ -16,13 +16,18 @@ $color-tertiary-dark: #5643fa;
 $color-gray-light-1: #f7f7f7;
 $color-gray-light-2: #eee;
 $color-gray-dark: #777;
+$color-gray-dark-2: #999;
 
 $color-red-1: rgb(182, 19, 51);
 
 $color-white: #fff;
 $color-black: #000;
 
-
+//border
+$border-radius-default: 0.3rem;
+$border-radius-small: 1rem;
+$border-radius-medium: 2rem;
+$border-radius-big: 3rem;
 
 //GRID
 $grid-max-width: 120rem;
