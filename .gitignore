@@ -1,2 +1,4 @@
 /node_modules/
 /img/video.*
+# 生产分支忽略sass
+/sass/
