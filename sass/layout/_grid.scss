@@ -6,6 +6,15 @@
     //选择除了最后一个元素的所有元素
     &:not(:last-child) {
         margin-bottom: 8rem;
+
+        @include respond(m9) {
+            margin-bottom: $grid-gutter-vertical-small;
+        }
+    }
+
+    @include respond(m9) {
+        max-width: 65rem;
+        padding: 0 3rem;
     }
 
     @include clearfix;
@@ -16,6 +25,16 @@
 
         &:not(:last-child) {
             margin-right: $grid-gutter-horizontal;
+
+            @include respond(m9) {
+                margin-right: 0;
+                margin-bottom: $grid-gutter-vertical-small;
+            }
+        }
+
+        @include respond(m9) {
+            width: 100% !important;
+
         }
     }
 

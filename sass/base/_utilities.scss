@@ -8,10 +8,18 @@
 
 .u-margin-bottom-4 {
     margin-bottom: 4rem;
+
+    @include respond(m9) {
+        margin-bottom: 3rem;
+    }
 }
 
 .u-margin-bottom-8 {
     margin-bottom: 8rem;
+
+    @include respond(m9) {
+        margin-bottom: 5rem;
+    }
 }
 
 
@@ -33,10 +41,18 @@
 
 .u-margin-bottom-4-imp {
     margin-bottom: 4rem !important;
+
+    @include respond(m9) {
+        margin-bottom: 3rem !important;
+    }
 }
 
 .u-margin-bottom-8-imp {
     margin-bottom: 8rem !important;
+
+    @include respond(m9) {
+        margin-bottom: 5rem !important;
+    }
 }
 
 .u-padding-bottom-8 {

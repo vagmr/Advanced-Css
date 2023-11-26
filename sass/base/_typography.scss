@@ -8,10 +8,15 @@
         font-weight: 400;
         letter-spacing: 5.5rem;
         animation: moveInleft 1.5s ease-out;
+
         /*
         animation-delay: 2s;//动画延迟时间
         animation-iteration-count: 3;//动画迭代次数
          */
+        @include respond(m6) {
+            letter-spacing: 2rem;
+            font-size: 4rem;
+        }
     }
 
     &-sub {
@@ -21,6 +26,10 @@
         letter-spacing: 1.4rem;
         animation: moveInright 1.5s ease-out;
         margin-bottom: 5rem;
+
+        @include respond(m6) {
+            letter-spacing: 1rem;
+        }
     }
 
 }
@@ -35,6 +44,14 @@
     background-clip: text;
     letter-spacing: .2rem;
     transition: all .2s;
+
+    @include respond(m9) {
+        font-size: 3rem;
+    }
+
+    @include respond(m6) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(3deg) skewX(15deg) scale(1.1);

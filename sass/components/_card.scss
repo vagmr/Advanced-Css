@@ -154,4 +154,59 @@
         font-size: 6rem;
         font-weight: 100;
     }
+
+
+    // 媒体查询
+    @include respond(m9) {
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+
+            &--back {
+                transform: rotateY(0);
+                -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        &:hover &--side--front {
+            transform: rotateY(0);
+        }
+
+        &--deatils {
+            padding: 1rem 3rem;
+        }
+
+        //背面样式
+        &--cta {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translate(0);
+            text-align: center;
+            padding: 7rem 4rem 4rem 4rem;
+        }
+
+        &--price-box {
+            margin-bottom: 3rem;
+        }
+
+        &--price-only {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: $color-red-2;
+            font-weight: 500;
+        }
+
+        &--price-value {
+            font-size: 6rem;
+        }
+    }
 }

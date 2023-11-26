@@ -23,9 +23,9 @@ html {
         font-size: 50%;
     }
 
-    @include respond(m6) {
-        font-size: 40%;
-    }
+    // @include respond(m6) {
+    //     font-size: 40%;
+    // }
 
 }
 
@@ -36,4 +36,8 @@ body {
     line-height: 1.7;
     color: $color-gray-dark;
     padding: 3rem;
+
+    @include respond(m9) {
+        padding: 0;
+    }
 }

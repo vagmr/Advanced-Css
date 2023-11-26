@@ -51,11 +51,22 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.5);
         transition: all .4s .2s;
+
+        @include respond(m12) {
+            width: 90%;
+            height: 50%;
+        }
+
     }
 
     &--left {
         width: 33%;
         display: table-cell;
+
+        @include respond(m9) {
+            display: none;
+        }
+
     }
 
     &--right {
@@ -64,11 +75,21 @@
         vertical-align: top;
         padding: 3rem 5rem;
 
+        @include respond(m9) {
+            width: 100%;
+            display: block;
+            padding: 2rem 3rem;
+        }
+
     }
 
     &--img {
         display: block;
         width: 100%;
+
+        @include respond(m12) {
+            height: 50%;
+        }
     }
 
     &--paragraph {
@@ -84,5 +105,12 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(m9) {
+            font-size: 1.6rem;
+            column-count: 2;
+            column-gap: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 }
