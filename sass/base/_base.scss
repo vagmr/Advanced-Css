@@ -41,3 +41,9 @@ body {
         padding: 0;
     }
 }
+
+// 自定义选中的样式
+::selection {
+    background-color: $color-primary;
+    color: $color-red-2
+}
