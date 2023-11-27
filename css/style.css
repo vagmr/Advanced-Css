@@ -596,12 +596,17 @@ body {
   height: 15rem;
   background-color: orchid;
   float: left;
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
+  overflow: hidden;
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
+}
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .story--shape {
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+  }
 }
 @media (max-width: 56.25em) {
   .story--shape {
@@ -765,6 +770,8 @@ body {
   z-index: 102;
   opacity: 0;
   visibility: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transition: all 0.3s;
 }
 .popup:target {
@@ -871,7 +878,7 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 1800px) {
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 1800px) {
   .head {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(https://vagmr-event.oss-cn-beijing.aliyuncs.com/2ab7d9a5-0c77-43e7-b8cb-1b96c508e9cd.jpg);
   }
