@@ -864,12 +864,22 @@ body {
 
 .head {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(https://vagmr-event.oss-cn-beijing.aliyuncs.com/2ab7d9a5-0c77-43e7-b8cb-1b96c508e9cd.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 1800px) {
+  .head {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(https://vagmr-event.oss-cn-beijing.aliyuncs.com/2ab7d9a5-0c77-43e7-b8cb-1b96c508e9cd.jpg);
+  }
+}
+@media (max-width: 600px) and (min-resolution: 192dpi) {
+  .head {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(255, 119, 48, 0.8)), url(../img/hero-small.jpg);
+  }
 }
 @media (max-width: 75em) {
   .head {
@@ -1052,7 +1062,7 @@ body {
 @media (max-width: 56.25em) {
   .navigation--button {
     top: 4rem;
-    right: 3rem;
+    right: 4rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -1077,7 +1087,7 @@ body {
 @media (max-width: 56.25em) {
   .navigation--bg {
     top: 4.5rem;
-    right: 3.5rem;
+    right: 4.5rem;
   }
 }
 @media (max-width: 37.5em) {

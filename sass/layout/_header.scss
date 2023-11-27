@@ -3,12 +3,28 @@
     background-image: linear-gradient(to right bottom,
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 0.8)),
-        url(https://vagmr-event.oss-cn-beijing.aliyuncs.com/2ab7d9a5-0c77-43e7-b8cb-1b96c508e9cd.jpg);
+        url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    @media (min-resolution:192dpi) and (min-width:37.5em),
+    (min-width:1800px) {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8)),
+            url(https://vagmr-event.oss-cn-beijing.aliyuncs.com/2ab7d9a5-0c77-43e7-b8cb-1b96c508e9cd.jpg);
+    }
+
+    @media (max-width:600px) and (min-resolution:192dpi) {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-secondary-dark, 0.8)),
+            url(../img/hero-small.jpg);
+    }
+
 
     @include respond(m12) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 77vh, 0 90%);
