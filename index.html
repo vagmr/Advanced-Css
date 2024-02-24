@@ -7,11 +7,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <title>Natours | Exciting tours for adventurous people</title>
+    <title>Advanced Css</title>
 </head>
 
 <body>
@@ -50,7 +49,7 @@
                 <span class="primary-title-sub">is a web developer</span>
             </h1>
             <a href="javascript:;" class="btn btn-white btn-animate">discover our tours</a>
-            <audio autoplay="true"
+            <audio autoplay
                 src="https://vagmr-event.oss-cn-beijing.aliyuncs.com/fd07ec65-769f-426a-9ba8-663bbdaadb81.mp3"></audio>
         </div>
 
@@ -84,12 +83,23 @@
                         aperiam quis?
                     </p>
                     <a href="javascript:;" class="btn-text">Learn more &rarr;</a>
+
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="photo 1" class="composition--photo composition--photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="photo 2" class="composition--photo composition--photo--p2">
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            class="composition--photo composition--photo--p1" src="img/nat-1-large.jpg" alt="photo 1">
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            class="composition--photo composition--photo--p2" src="img/nat-2-large.jpg" alt="photo 2">
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            class="composition--photo composition--photo--p3" src="img/nat-3-large.jpg" alt="photo 3">
+                        <!-- 
+                            <img src="img/nat-2-large.jpg" alt="photo 2" class="composition--photo composition--photo--p2">
                         <img src="img/nat-3-large.jpg" alt="photo 3" class="composition--photo composition--photo--p3">
+                        -->
                     </div>
                 </div>
             </div>
@@ -254,12 +264,8 @@
         <section class="section-stories" id="section-stories">
             <div class="bg-video">
                 <video class="bg-video--content" autoplay muted loop>
-                    <source
-                        src="https://vagmr-event.oss-cn-beijing.aliyuncs.com/85c93f8a-a0a5-4fe6-bc55-2d0513029ac8.mp4"
-                        type="video/mp4">
-                    <source
-                        src="https://vagmr-event.oss-cn-beijing.aliyuncs.com/ff964925-d1d7-42cd-96f7-15a156744388.webm"
-                        type="video/webm">
+                    <source src="/img/video.mp4" type="video/mp4">
+                    <source src="/img/video.webm" type="video/webm">
                     >
                     Your browser is not supported!
                 </video>
@@ -393,7 +399,7 @@
                 </p>
                 <span class="footer--copyright-banner">
                     Copyright &copy; 2023 vagmr &nbsp;
-                    Only Html and Css,No javascript.
+                    Only built by html and css,no javascript.
                 </span>
             </div>
         </div>
